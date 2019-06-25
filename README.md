@@ -15,5 +15,6 @@ My little web starter kit.
   - run libsass
 - Don't commit the `config.codekit3` file to the repo. 
 ### CodeKit + Jykell
-- set code kit to use an external server
+- I use [CodeKit3](https://codekitapp.com/) to compile my SCSS and refresh my browser.
+- set CodeKit to use an external server
 - in `config.yml` add `config.codekit3` to the list of excluded files. 
