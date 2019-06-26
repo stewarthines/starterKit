@@ -1,0 +1,12 @@
+// === BORDER RADIUS ===//
+$borderRadiusBase: 4px;
+$borderRadius:(
+  small: $borderRadiusBase/2,
+  base: $borderRadiusBase,
+  large: $borderRadiusBase * 2,
+  circle: 1000px
+);
+@function borderRadius($key){
+  @return map-get($borderRadius, $key);
+}
+// === /BORDER RADIUS === //

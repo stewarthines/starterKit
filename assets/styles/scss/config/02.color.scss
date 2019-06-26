@@ -1,0 +1,38 @@
+// === COLORS === //
+$colors:(
+  gray: (
+  white: #ffffff,
+  lightest: #ffffff,
+  light: #F7F7FB,
+  base: #82899B,
+  dark: #353848
+  ),
+  blue: (
+    lightest: #E7F5FF,
+    light: #D0EBFF,
+    base: #228BE6,
+    dark: #1864AB
+  ),
+  green: (
+    lightest: #EBFBEE,
+    light: #D3F9D8,
+    base: #40C057,
+    dark: #2B8A3E
+  ),
+  red: (
+    lightest:#FFF5F5,
+    light: #FFE3E3,
+    base: #FA5252,
+    dark: #C92A2A
+  ),
+  orange: (
+    lightest: #FFF4E6,
+    light: #FFE8CC,
+    base: #FD7E14,
+    dark: #D9480F
+  )
+);
+@function color($color, $tone: 'base') {
+  @return map-get(map-get($colors, $color), $tone);
+}
+// === /COLOR === //

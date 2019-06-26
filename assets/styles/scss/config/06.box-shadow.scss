@@ -1,0 +1,11 @@
+
+// === BOX SHADOW === //
+$shadow:(
+  close: 0px 1px 2px rgba(0, 0, 0, 0.24),  
+  distant: 0px 8px 16px rgba(0, 0, 0, 0.16),
+  subtle: 0px 0px 4px rgba(0, 0, 0, 0.08)
+);
+@function shadow($key){
+    @return map-get($shadow, $key);
+}
+// === /BOX SHADOW === //
